@@ -16,8 +16,15 @@
     <label for="kataLaluan">Enter password</label>
     <input type="password" id="kataLaluan">
     <br>
+    <a onclick="manageLink()" id="LinkMetallica" href="http://www.metallica.com" target="_blank" rel="noopener noreferrer">Metallica</a>
 
-</head>
+    <script>
+        function manageLink(){
+            event.preventDefault();
+            alert("Stopped default event!");
+        }
+    </script>
+    
 <script src="js/index.js"></script>
 
 </body>
