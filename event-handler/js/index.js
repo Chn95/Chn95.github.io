@@ -17,5 +17,5 @@ function checkPassword(){
     }
 }
 
-let elKataLaluan = document.getElementById("KataLaluan");
+let elKataLaluan = document.getElementById("kataLaluan");
 elKataLaluan.onblur = checkPassword;
