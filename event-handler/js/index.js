@@ -18,4 +18,4 @@ function checkPassword(){
 }
 
 let elKataLaluan = document.getElementById("kataLaluan");
-elKataLaluan.onblur = checkPassword;
+elKataLaluan.onblur = checkPassword; 
