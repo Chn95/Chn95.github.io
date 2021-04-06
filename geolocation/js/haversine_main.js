@@ -11,10 +11,10 @@ elLocate.addEventListener("click",function(){
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
 let elLat = document.getElementById("lat");
-let elLong = document.getElementById("Long");
+let elLong = document.getElementById("long");
 let elDePulze = document.getElementById("depulze");
 let elSunway = document.getElementById("sunway");
-let elKLCC = document.getElementById("klcc");
+let elKlcc = document.getElementById("klcc");
 
 let userLat = position.coords.latitude;
 let userLong = position.coords.longitude;
@@ -23,9 +23,9 @@ let distances = findNearest(userLat, userLong);
 
 elLat.innerHTML = "Your latitude: " + userLat;
 elLong.innerHTML = "Your longtude: " + userLong;
-elDepulze.innerHTML = "Distance to De Pulze, Cyberjaya is" + distance[0] + "km";
-elSunway.innerHTML = "Distance to Sunway is" + distance[1] + "km";
-elKLCC.innerHTML = "Distance to KLCC, Ampang is" + distance[2] + "km";
+elDePulze.innerHTML = "Distance to De Pulze, Cyberjaya is" + distance[0] + "km";
+elSunway.innerHTML = "Distance to Sunway Pyramid, Subang Jaya is" + distance[1] + "km";
+elKlcc.innerHTML = "Distance to KLCC, Ampang is" + distance[2] + "km";
  });
 } else {
     alert("Geolocation is not supported by this browser.")
