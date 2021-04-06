@@ -23,9 +23,9 @@ let distances = findNearest(userLat, userLong);
 
 elLat.innerHTML = "Your latitude: " + userLat;
 elLong.innerHTML = "Your longtude: " + userLong;
-elDePulze.innerHTML = "Distance to De Pulze, Cyberjaya is" + distance[0] + "km";
+elDePulze.innerHTML = "Distance to De Pulze, Cyberjaya is" + distances[0] + "km";
 elSunway.innerHTML = "Distance to Sunway Pyramid, Subang Jaya is" + distance[1] + "km";
-elKlcc.innerHTML = "Distance to KLCC, Ampang is" + distance[2] + "km";
+elKlcc.innerHTML = "Distance to KLCC, Ampang is" + distances[2] + "km";
  });
 } else {
     alert("Geolocation is not supported by this browser.")
