@@ -10,7 +10,7 @@ function LoadUser(){
     .then((response) => response.json())
     .then(data =>{
         let fn = document.getElementById("firstName");
-        let in = document.getElementById("lastName");
+        let ln = document.getElementById("lastName");
         let phone = document.getElementById("phone");
         let img = document.getElementById("userimg");
 
