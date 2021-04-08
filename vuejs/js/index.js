@@ -9,8 +9,8 @@ let app2 = new Vue({
     el:"#app2",
     data:{
         message:"Loaded on" + new Date().toLocaleString()
-        LinkUrl: "https://bbc.in/2LanJs8",
-        LinkText: "Google is down!"
+        linkUrl: "https://bbc.in/2LanJs8",
+        linkText: "Google is down!"
     }
 });
 
@@ -54,5 +54,31 @@ let app6 = new Vue ({
     el: "app6",
     data: {
         message:"Hello World!"
+    }
+});
+
+Vue.component("grocery-list",{
+    props:["todo"],
+    template:"<li>{{todo.desc}}</li>"
+});
+
+let app7 = new Vue({
+    el: "#app7",
+    data: {
+        groceryList: [
+            {
+                id:0,
+                desc:"Vegetables"
+            },
+            {
+                id:1,
+                desc:"Chesese"
+
+            },
+            {
+                id:2,
+                desc:"Mineral Water"
+            }
+        ]
     }
 });
