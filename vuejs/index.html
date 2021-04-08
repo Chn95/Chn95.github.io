@@ -10,7 +10,7 @@
 <body>
     
     <div id="app">
-        {{ message}}
+        {{ message }}
     </div>
 
     <div id="app2">
@@ -18,7 +18,7 @@
             Hover your mouse over me for a few seconds to see the title!
         </span>
         <a v-bind:vref="linkUrl" target="_blank" rel="noopener noreferrer">
-            {{ LinkText }}
+            {{ linkText }}
         </a>
     </div>
 
@@ -29,7 +29,7 @@
     <div id="app4">
         <ol>
             <li v-for="todo in theList">
-                {{ todotext }}
+                {{todo.text}}
             </li>
         </ol>
     </div>
