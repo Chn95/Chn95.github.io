@@ -12,6 +12,34 @@
     <div id="app">
         {{ message}}
     </div>
+
+    <div id="app2">
+        <span v-bind:tittle="message">
+            Hover your mouse over me for a few seconds to see the title!
+        </span>
+        <a v-bind:vref="linkUrl" target="_blank" rel="noopener noreferrer">
+            {{ LinkText }}
+        </a>
+    </div>
+
+    <div id="app3">
+        <span v-if="showIt">Now you see this!</span>
+    </div>
+
+    <div id="app4">
+        <ol>
+            <li v-for="todo in theList">
+                {{ todotext }}
+            </li>
+        </ol>
+    </div>
+
+    <div id="app5">
+        <p>
+            {{msg}}
+        </p>
+        <button v-on:click="reverseMsg">Reverse the string!</button>
+    </div>
     
     <script src="js/index.js"></script>
 </body>
