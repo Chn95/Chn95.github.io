@@ -8,8 +8,8 @@ let app = new Vue({
 let app2 = new Vue({
     el:"#app2",
     data:{
-        message:"Loaded on" + new Date().toLocaleString()
-        linkUrl: "https://bbc.in/2LanJs8",
+        message:"Loaded on" + new Date().toLocaleString(),
+        linkUrl: "https://bbc.in/2LAnJs8",
         linkText: "Google is down!"
     }
 });
@@ -51,7 +51,7 @@ let app5 = new Vue({
 });
 
 let app6 = new Vue ({
-    el: "app6",
+    el: "#app6",
     data: {
         message:"Hello World!"
     }
