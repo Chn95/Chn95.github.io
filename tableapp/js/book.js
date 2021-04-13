@@ -9,7 +9,7 @@ let userEmailVal = userEmail.value;
 let userPaxVal = document.getElementById("userPax").value;
 let userRemarksVal = document.getElementById("userRemarks").value;
 
-bookNowBtn(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
+BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
 
 });
 
