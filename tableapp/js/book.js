@@ -33,7 +33,6 @@ function BookNow(userName, userEmail, userPax, userRemarks){
     })
     .then((response) => response.json())
     .then(json => {
-      // Do something with object
      alert(json.bookingitem.name + " sucessfully added!"));
     });
 }
