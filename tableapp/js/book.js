@@ -13,7 +13,7 @@ bookNowBtn.addEventListener("click",function(){
     let userAddressVal =userAddress.value;
 
     let userContactNumber = document.getElementById("userContactNumber");
-    let userContactNumber = userContactNumber.value;
+    let userContactNumberVal = userContactNumber.value;
 
     BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal, userAddressVal, userContactNumberVal);
 
