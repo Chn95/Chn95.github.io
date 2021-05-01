@@ -21,8 +21,8 @@ function GetBooking(){
             let gName = json.bookingitems[i].name;
             let gEmail = json.bookingitems[i].email;
             let gPax = json.bookingitems[i].pax;
-            let gYourORder = json.bookingitems[i].remarks;
-            let gYourPreferredDate = json.bookingitems[i].address;
+            let gYourORder = json.bookingitems[i].yourorder;
+            let gYourPreferredDate = json.bookingitems[i].yourpreferreddate;
             let gContactNumber = json.bookingitems[i].contactnumber;
             let gId = json.bookingitems[i].id;
             let btnId = "delete" + gId;
