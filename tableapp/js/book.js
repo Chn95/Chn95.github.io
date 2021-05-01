@@ -7,19 +7,19 @@ bookNowBtn.addEventListener("click",function(){
     let userEmailVal = userEmail.value;
 
     let userPaxVal = document.getElementById("userPax").value;
-    let userRemarksVal = document.getElementById("userRemarks").value;
+    let userYourOrderVal = document.getElementById("userYourOrder").value;
 
-    let userAddress = document.getElementById("userAddress");
-    let userAddressVal =userAddress.value;
+    let userYourPreferredDate = document.getElementById("userYourPreferredDate");
+    let userYourPreferredDateVal =userYourPreferredDate.value;
 
     let userContactNumber = document.getElementById("userContactNumber");
     let userContactNumberVal = userContactNumber.value;
 
-    BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal, userAddressVal, userContactNumberVal);
+    BookNow(userNameVal, userEmailVal, userPaxVal, userYourOrderVal, userYourPreferredDateVal, userContactNumberVal);
 
 });
 
-function BookNow(userName, userEmail, userPax, userRemarks, userAddress, userContactNumber){
+function BookNow(userName, userEmail, userPax, userYourOrder, userYourPreferredDate, userContactNumber){
 
     let url = 'https://api.sheety.co/bed74b1a6b2423924028ecc0585e4cbd/tableapp/bookingitems';
     let body = {
@@ -27,8 +27,8 @@ function BookNow(userName, userEmail, userPax, userRemarks, userAddress, userCon
         name: userName,
         email: userEmail,
         pax:userPax,
-        remarks:userRemarks,
-        address: userAddress,
+        yourorder:userYourOrder,
+        yourpreferreddate: userYourPreferredDate,
         contactnumber: userContactNumber,
       }
     }
